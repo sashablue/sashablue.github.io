@@ -12,20 +12,19 @@ Local IP wtfismyip.com/text:
 Local IP ifconfig.me:
 82.79.173.40<br>
 <br>
-Your IP is:
-<script>
 
-$.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
-  // Convert key-value pairs to JSON
-  // https://stackoverflow.com/a/39284735/452587
-  data = data.trim().split('\n').reduce(function(obj, pair) {
-    pair = pair.split('=');
-    return obj[pair[0]] = pair[1], obj;
-  }, {});
-  console.log(data);
-});
+    <script type="text/javascript">
+        window.onload = function () {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://api.ipify.org?format=jsonp&callback=DisplayIP";
+            document.getElementsByTagName("head")[0].appendChild(script);
+        };
+        function DisplayIP(response) {
+            document.getElementById("ipaddress").innerHTML = "Your IP Address is " + response.ip;
+        }
+    </script>
 
-</script>
 <br>
 <pre><span class="inner-pre" style="font-size: 14px">
 Filesystem      Size  Used Avail Use% Mounted on
