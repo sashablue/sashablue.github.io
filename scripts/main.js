@@ -1,4 +1,3 @@
-    <script type="text/javascript">
         window.onload = function () {
             var script = document.createElement("script");
             script.type = "text/javascript";
@@ -8,4 +7,3 @@
         function DisplayIP(response) {
             document.getElementById("ipaddress").innerHTML = "Your IP Address is " + response.ip;
         }
-    </script>
