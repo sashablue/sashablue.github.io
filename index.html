@@ -12,19 +12,8 @@ Local IP wtfismyip.com/text:
 Local IP ifconfig.me:
 82.79.173.40<br>
 <br>
-
-    <script type="text/javascript">
-        window.onload = function () {
-            var script = document.createElement("script");
-            script.type = "text/javascript";
-            script.src = "https://api.ipify.org?format=jsonp&callback=DisplayIP";
-            document.getElementsByTagName("head")[0].appendChild(script);
-        };
-        function DisplayIP(response) {
-            document.getElementById("ipaddress").innerHTML = "Your IP Address is " + response.ip;
-        }
-    </script>
-
+<script src="scripts/main.js"></script>
+<span id="ipaddress"></span>
 <br>
 <pre><span class="inner-pre" style="font-size: 14px">
 Filesystem      Size  Used Avail Use% Mounted on
