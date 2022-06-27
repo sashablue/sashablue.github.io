@@ -7,9 +7,10 @@ canvas.height = window.innerHeight;
 const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
 const greek = 'ΑαΒβΓγΔδΕεΖζΗηΘθΙιΚκΛλΜμΝνΞξΟοΠπΡρΣσςΤτΥυΦφΧχΨψΩω';
 const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const latin_small = 'abcdefghijklmnopqrstuvwxyz';
 const nums = '0123456789';
 
-const alphabet = greek + latin + nums;
+const alphabet = greek + latin + latin_small + nums;
 
 const fontSize = 16;
 const columns = canvas.width/fontSize;
