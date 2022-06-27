@@ -5,5 +5,5 @@
             document.getElementsByTagName("head")[0].appendChild(script);
         };
         function DisplayIP(response) {
-            document.getElementById("ipaddress").innerHTML = "Your IP Address is " + response.ip;
+            document.getElementById("ipaddress").innerHTML = "Your IP Address is: " + response.ip;
         }
