@@ -40,4 +40,4 @@ const draw = () => {
 	}
 };
 
-setInterval(draw, 55);
+setInterval(draw, 5);
